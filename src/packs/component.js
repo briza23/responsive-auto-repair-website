@@ -6,11 +6,15 @@ import Body from "./content/body";
 import Footer from "./content/footer";
 
 
+const header_data = {
+    "company_name": "Briza's Auto Deals"
+}
+
 class Components extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
+                <Header header={header_data}/>
                 <Body/>
                 <Footer/>
             </div>
