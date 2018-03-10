@@ -1,12 +1,12 @@
 import React from "react"; // eslint-disable-line no-unused-vars
 
-const Header = (type) => {
+const Body = (type) => {
    const content = (
     <div>
-        <p>Header</p>
+        <p>Body</p>
     </div>
    );
    return content;
 };
 
-export default Header;
+export default Body;

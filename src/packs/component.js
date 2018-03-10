@@ -1,12 +1,18 @@
 import { connect } from "react-redux";
 import * as Actions from "./actions/actions";
 import React from "react";
+import Header from "./content/header";
+import Body from "./content/body";
+import Footer from "./content/footer";
+
 
 class Components extends React.Component {
     render() {
         return (
             <div>
-                <p>testtt</p>
+                <Header/>
+                <Body/>
+                <Footer/>
             </div>
         );
     }
