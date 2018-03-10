@@ -7,7 +7,11 @@ import Footer from "./content/footer";
 
 
 const header_data = {
-    "company_name": "Briza's Auto Deals"
+    "company_name": "Briza's Auto Deals",
+    "pages": [{"name": "Home", "id": "home"},
+              {"name": "Services", "id": "services"},
+              {"name": "About Us", "id": "about_us"},
+              {"name": "Contact Us", "id": "contact_us"}]
 }
 
 class Components extends React.Component {
