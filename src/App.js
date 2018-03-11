@@ -6,7 +6,7 @@ import VisibleContainer from './packs/container';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App custom-container">
         <VisibleContainer />
       </div>
     );
