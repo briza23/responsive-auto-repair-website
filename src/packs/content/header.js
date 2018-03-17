@@ -1,40 +1,64 @@
 import React from "react"; // eslint-disable-line no-unused-vars
+import { Link } from 'react-router-dom';
+import { connect } from "react-redux";
+import * as Actions from "../actions/actions";
 
-const Header = (props) => {
-    const { company_name, pages } = props.header;
-
-    const nav_pages = pages.map((page, i) =>{
-        return (
-            <li className={i === 0 ? "active": ""}><a href="#">{page.name}</a></li>
-        );
-    });
+class Header extends React.Component {
     
-    const content = (
-        <div className="header">
-            <nav className="navbar navbar-inverse sticky">
-                <div className="container-fluid">
-                <div className="navbar-header">
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>                        
-                    </button>
-                    <a className="navbar-brand" href="#">{company_name}</a>
+    render() {
+        const { header, router } = this.props
+        const { company_name, pages } = header;
+        const { location } = router;
+
+        const nav_pages = pages.map((page, i) =>{
+            const {link, name, id} = page
+            return (
+                <li key={id} className={location.pathname === link ? "active": ""}><a href={link}>{name}</a></li>
+            );
+        });;
+        return (
+            <div>
+                <div className="header">
+                    <nav className="navbar navbar-inverse sticky">
+                        <div className="container-fluid">
+                        <div className="navbar-header">
+                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>                        
+                            </button>
+                            <a href={"/"}>
+                                <span className="navbar-brand">{company_name}</span>
+                            </a>
+                        </div>
+                        <div className="collapse navbar-collapse" id="myNavbar">
+                            <ul className="nav navbar-nav">
+                                {nav_pages}                                
+                            </ul>
+                            <ul className="nav navbar-nav navbar-right">
+                            <li><a><span className="fa fa-user"></span> Sign Up</a></li>
+                            <li><a><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
                 </div>
-                <div className="collapse navbar-collapse" id="myNavbar">
-                    <ul className="nav navbar-nav">
-                        {nav_pages}
-                    </ul>
-                    <ul className="nav navbar-nav navbar-right">
-                    <li><a href="#"><span className="fa fa-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
-        </div>
-    );
-   return content;
+            </div>
+        );
+    }
+}
+
+
+Header.propTypes = {
 };
 
-export default Header;
+function mapStateToProps(state) {
+    return state;
+}
+
+const VisibleHeader = connect(
+    mapStateToProps,
+    Actions
+)(Header);
+
+export default VisibleHeader;
