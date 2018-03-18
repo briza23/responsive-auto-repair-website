@@ -1,9 +1,9 @@
 import React from "react"; // eslint-disable-line no-unused-vars
-
+import TopPage from "./home_content/top_page";
 const home = (type) => {
    const content = (
     <div>
-        <h1>Home page</h1>
+        <TopPage />
     </div>
    );
    return content;
