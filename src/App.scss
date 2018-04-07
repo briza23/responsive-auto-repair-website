@@ -1,10 +1,43 @@
+$header_color: #000000; 
+$header_active: #006AA3;
+$header_font_color: #D3D3D3;
+$primary_blue_font: #0082CD;
 
+.header-color {
+  color: $header_font_color;
+}
+
+.primary_blue_color {
+  color: $primary_blue_font;
+}
 .header {
+  font-family: 'Montserrat';
+
   .sticky {
     position: fixed;
     top: 0;
+    border-radius: 0;
     width: 100%;
     z-index: 999;
+    background-color: $header_color;
+  }
+  .logo-padding {
+    padding-left: 65px;
+  }
+  .logo-padding img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .nav-padding {
+    padding: 10px 65px;
+  }
+  .nav li a {
+    padding: 30px 15px;
+    color: $header_font_color;
+  }
+  .nav .active a,
+  .nav .active a:hover {
+    background-color: $header_active;
   }
 }
 
@@ -13,8 +46,10 @@
     position:absolute;
     bottom:0;
     width:100%;
+    padding: 23px 69px;
+    color: #797979;
     height:60px;   /* Height of the footer */
-    background:#6cf;
+    background-color: #262626;
   }
 }
 @keyframes App-logo-spin {

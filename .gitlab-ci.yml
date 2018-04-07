@@ -16,6 +16,6 @@ install_dependencies:
     paths:
       - node_modules/
 
-test_with_lab:
+eslint:
   stage: test
   script: ./node_modules/eslint/bin/eslint.js . --fix

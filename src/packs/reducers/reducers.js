@@ -3,10 +3,13 @@ import { routerReducer } from 'react-router-redux';
 
 const header_data = {
     "company_name": "Briza's Auto Deals",
-    "pages": [{"name": "Home", "link": "/", "id": "home"},
-              {"name": "Services", "link": "/services", "id": "services"},
-              {"name": "About Us", "link": "/about_us", "id": "about_is"},
-              {"name": "Contact Us", "link": "/contact_us", "id": "contact_us"}]
+    "pages": [{"name": "HOME", "link": "/", "id": "home"},
+              {"name": "SERVICES", "link": "/services", "id": "services"},
+              {"name": "ABOUT US", "link": "/about_us", "id": "about_is"},
+              {"name": "CONTACT US", "link": "/contact_us", "id": "contact_us"},],
+    "open_hours": {"day": "MONDAYS-FRIDAYS", time: "8 AM - 5 PM"},
+    "contact_number": "(02) 500 7069",
+    "property_logo": "https://lh3.google.com/u/0/d/1p1vq26fgIE9ksRk6qC_hFa3o644hGr7E=w1832-h887-iv1"
 }
 const body_data = [{}];
 const footer_data ={};
