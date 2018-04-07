@@ -40,14 +40,14 @@ class Header extends React.Component {
                                 </div>
                                 <div className="col-md-9">
                                     <div className="row">
-                                        <div className="col-md-7">
+                                        <div className="col-md-7 col-sm-12 col-xs-12">
                                             <div className="collapse navbar-collapse" id="myNavbar">
                                                 <ul className="nav navbar-nav">
                                                     {nav_pages}                                
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div className="col-md-5">
+                                        <div className="col-md-5 openHours">
                                             <ul className="nav navbar-nav navbar-right nav-padding">
                                                 <li className="text-right">
                                                     <p><i className="fa fa-clock-o primary_blue_color" aria-hidden="true"></i><span className="header-color"> {open_hours.day} <span className="primary_blue_color"> {open_hours.time} </span></span></p>

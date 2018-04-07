@@ -56,3 +56,9 @@ $primary_blue_font: #0082CD;
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media only screen and (max-width: 1193px) {
+  .openHours {
+      display: none;
+  }
+}
