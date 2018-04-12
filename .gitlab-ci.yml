@@ -20,3 +20,15 @@ install_dependencies:
 eslint:
   stage: test
   script: ./node_modules/eslint/bin/eslint.js . --fix
+
+production:
+  stage: deploy
+  script:
+  - npm run build
+  - mkdir  dist/build
+  - apt-get install -yqq ruby ruby-dev
+  - gem install dpl
+  - dpl --provider=heroku --app=brizasautodeal --api-key=c5e68cad-5e7f-41aa-a958-42b134d2c268
+  only:
+  - master
+  - develop

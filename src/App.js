@@ -13,3 +13,8 @@ class App extends Component {
 }
 
 export default App;
+// docu https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
+// $('html, body').animate({
+//   scrollTop: 400
+// }, 2000);
+

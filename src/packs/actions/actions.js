@@ -1,5 +1,4 @@
 import { push } from 'react-router-redux';
-
 // function changeActivePage(data){
 //     return {
 //         type: "CHANGE_ACTIVE_PAGE",

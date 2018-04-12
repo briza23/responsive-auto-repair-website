@@ -1,18 +1,21 @@
 $header_color: #000000; 
 $header_active: #006AA3;
 $header_font_color: #D3D3D3;
-$primary_blue_font: #0082CD;
+$blue: #0082CD;
+$white: #F2F2F2;
+$dark: #2F2F2F;
 
 .header-color {
   color: $header_font_color;
 }
 
 .primary_blue_color {
-  color: $primary_blue_font;
+  color: $blue;
+}
+.white {
+  color: $white;
 }
 .header {
-  font-family: 'Montserrat';
-
   .sticky {
     position: fixed;
     top: 0;
@@ -40,7 +43,32 @@ $primary_blue_font: #0082CD;
     background-color: $header_active;
   }
 }
-
+.footer-details {
+  height: auto;
+  background-color: $dark;
+  h4{
+    color: $white;
+  }
+  .col-md-4 {
+    padding: 30px 40px 100px 30px;
+  }
+  .padding-left-48 {
+    padding-left: 48px;
+  }
+  .fa-padding {
+    padding: 12px;
+  }
+  .second-div {
+    .details-info {
+      padding-left: 48px;
+    }
+  }
+  .first-div {
+    .details-info {
+      padding-left: 42px;
+    }
+  }
+}
 .footer {
   .footer-fixed {
     position:absolute;
@@ -48,7 +76,6 @@ $primary_blue_font: #0082CD;
     width:100%;
     padding: 23px 69px;
     color: #797979;
-    height:60px;   /* Height of the footer */
     background-color: #262626;
   }
 }
