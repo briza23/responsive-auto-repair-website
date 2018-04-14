@@ -4,7 +4,6 @@ import home from './body_content/home';
 import aboutUs from './body_content/about_us';
 import services from './body_content/services';
 import contactUs from './body_content/contact_us';
-
 const Body = (type) => {
    const content = (
     <div>

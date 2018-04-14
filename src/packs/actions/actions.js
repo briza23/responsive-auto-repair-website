@@ -9,6 +9,7 @@ import { push } from 'react-router-redux';
 export function changePage(page) {
     return(dispatch) => {
        dispatch(push(page.link));
+       dispatch(this.context.history.push(page.link));
     //    dispatch(changeActivePage(page));
     };       
 }

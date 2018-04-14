@@ -11,8 +11,12 @@ const header_data = {
     "contact_number": "(02) 500 7069",
     "property_logo": "https://lh3.google.com/u/0/d/1p1vq26fgIE9ksRk6qC_hFa3o644hGr7E=w1832-h887-iv1"
 }
-const body_data = {"open_hours_days": {day: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
-time: ["8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "CLOSED", "CLOSED"]},};
+const body_data = { "open_hours_days": {day: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
+                    time: ["8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "8:00 AM to 5:00 PM", "CLOSED", "CLOSED"]},
+                    "address": "9018 Provincial Road, Brgy. San Jose, Antipolo Rizal.",
+                    "contact_number": "(02) 500 7069",
+                    "quote": "Our goal is to gain your trust and confidence so that when you leave the shop, you are certain that your vehicle has been properly repaired by highly trained and certified technicians.",
+                    "facebook": {"link" : "https://www.facebook.com/brizasautodeals", "display": "facebook.com/brizasautodeals"}};
 const footer_data ={};
 
 // main reducers
