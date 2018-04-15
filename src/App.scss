@@ -2,7 +2,7 @@ $header_color: #000000;
 $header_active: #006AA3;
 $header_font_color: #D3D3D3;
 $blue: #0082CD;
-$white: #F2F2F2;
+$white: #FFFFFF;
 $dark: #2F2F2F;
 
 .header-color {
@@ -43,6 +43,48 @@ $dark: #2F2F2F;
     background-color: $header_active;
   }
 }
+.benefits {
+  background: $dark;
+  padding: 30px 10px 30px 10px;
+  .benefits-header{
+    font-size: 30px;
+  }
+  .benefits-content {
+    padding: 10px 100px 10px 100px;
+  }
+  .benefits-info{
+    font-size: 16px;
+  }
+}
+.contact_us{
+  background-color: $white;
+  .padding-contact-us {
+    padding: 30px;
+  }
+  .contact_head {
+    font-size: 30px;
+    color: $blue;
+  }
+  .contact-info {
+    font-size: 16px;
+  }
+  .details-info {
+    background-color: #F2F2F2;
+    padding: 10px;
+    .details-info-text {
+      font-size: 20px;
+    }
+  }
+  .map-style {
+    padding: 0;
+  }
+  .margin-details {
+    margin: 30px;
+  }
+  .fa {
+    color: $blue;
+  }
+}
 .footer-details {
   height: auto;
   background-color: $dark;
@@ -80,6 +122,14 @@ $dark: #2F2F2F;
     background-color: #262626;
   }
 }
+// objects
+#map {
+  width: 100%;
+  height: 280px;
+  background-color: grey;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

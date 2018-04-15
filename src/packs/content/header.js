@@ -11,7 +11,7 @@ class Header extends React.Component {
         const nav_pages = pages.map((page, i) =>{
             const {link, name, id} = page
             return (
-                <li key={id} className={location.pathname === link ? "active": ""}><a href={page.link}>{name}</a></li>
+                <li key={id} className={location.pathname === link ? "active": ""}><a id={id}>{name}</a></li>
             );
         });;
         return (

@@ -2,8 +2,8 @@ import { connect } from "react-redux";
 import * as Actions from "./actions/actions";
 import React from "react";
 import Header from "./content/header";
-import Body from "./content/body";
 import Footer from "./content/footer";
+import Body from './content/body_content/home';
 
 class Components extends React.Component {
     render() {
