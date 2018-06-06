@@ -4,6 +4,7 @@ $header_font_color: #D3D3D3;
 $blue: #0082CD;
 $white: #FFFFFF;
 $dark: #2F2F2F;
+$gray: #F4F4F4;
 
 .header-color {
   color: $header_font_color;
@@ -12,9 +13,19 @@ $dark: #2F2F2F;
 .primary_blue_color {
   color: $blue;
 }
+
 .white {
   color: $white;
 }
+
+.white-background {
+  background-color: $white;
+}
+
+.gray {
+  background-color: $gray;
+}
+
 .header {
   .sticky {
     position: fixed;
@@ -84,6 +95,36 @@ $dark: #2F2F2F;
   .fa {
     color: $blue;
   }
+}
+.services {
+  .centered {
+    background-color: black;
+    padding: 10px;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 370px;
+    top: 78%;
+    left: 50%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    transform: translate(-50%, -50%);
+  }
+  .image-font {
+    font-size: 30px;
+  }
+  .products {
+    border-bottom: 15px solid $blue;
+    .prod-container {
+      padding: 30px
+    }
+  }
+}
+.services_details {
+  padding: 15px 80px 15px 80px;
 }
 .footer-details {
   height: auto;

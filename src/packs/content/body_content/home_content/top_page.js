@@ -6,15 +6,19 @@ const top_page = (type) => {
         <div id="myCarousel" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
             <div className="item active">
-            <img width="100%" src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" />
+            <img width="100%" src="498888104.jpg"  alt="Los Angeles" />
             </div>
     
             <div className="item">
-            <img width="100%" src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago"/>
+            <img width="100%" src="673723668.jpg" alt="Chicago"/>
             </div>
         
             <div className="item">
-            <img width="100%" src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" />
+            <img width="100%" src="522394158.jpg" alt="New york" />
+            </div>
+
+            <div className="item">
+            <img width="100%" src="submarine-interiour-4-1563934.jpg" alt="New york" />
             </div>
         </div>
         <a className="left carousel-control" href="#myCarousel" data-slide="prev">
