@@ -10,7 +10,7 @@ class Home extends React.Component {
         const { body } = this.props;
         return (
             <div>
-                <TopPage />
+                <TopPage/>
                 <MiddlePage body={body}/>
                 <BottomPage body={body}/>
             </div>

@@ -3,8 +3,8 @@ import React from "react"; // eslint-disable-line no-unused-vars
 const bottom_page = (props) => {
     const { body } = props;
     const contact_us = (
-        <div className="row">
-            <div className="col-md-12 padding-contact-us">
+        <div name="contact_us" className="row">
+            <div id="contact_us" className="col-md-12 padding-contact-us">
                 <div className="text-center">
                     <b className="contact_head">CONTACT US</b>
                     <p className="contact-info">Our Location and Services Inquiries</p>

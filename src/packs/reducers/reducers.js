@@ -5,7 +5,7 @@ const header_data = {
     "company_name": "Briza's Auto Deals",
     "pages": [{"name": "HOME", "link": "/", "id": "home"},
               {"name": "SERVICES", "link": "/services", "id": "services"},
-              {"name": "ABOUT US", "link": "/about_us", "id": "about_is"},
+              {"name": "ABOUT US", "link": "/about_us", "id": "about_us"},
               {"name": "CONTACT US", "link": "/contact_us", "id": "contact_us"},],
     "open_hours": {"day": "MONDAYS-FRIDAYS", time: "8 AM - 5 PM"},
     "contact_number": "(02) 500 7069",
