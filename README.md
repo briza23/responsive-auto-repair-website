@@ -87,7 +87,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Authors
 
 Developer: * **Jann Anthony Briza** - [briza23](https://github.com/briza23)
-Designer: * **Jenniza Anne Petalbert** - [briza23](https://www.behance.net/user/?username=jennizapetalbert)
+Designer: * **Jenniza Anne Petalbert** - [jenniza](https://www.behance.net/user/?username=jennizapetalbert)
 
 
 See also the list of [contributors](https://github.com/briza23/responsive-auto-repair-website/contributors) who participated in this project.
